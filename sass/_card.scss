@@ -1,20 +1,39 @@
 /*----------------------------
       Base
  ----------------------------*/
-  
- body {
-   background-color: hsl(233, 47%, 7%);
- }
-  
-  
- .page-wrapper {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   min-height: 100vh;
- } 
-  
-  
 
-  
-  
+body {
+  background-color: hsl(233, 47%, 7%);
+  color: hsl(0, 0%, 100%);
+  font-size: 0, 9375rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/*----------------------------
+      Card
+ ----------------------------*/
+.card {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 20.4375rem;
+
+  img {
+    width: 100%;
+    mix-blend-mode: multiply;
+    opacity: 0.79;
+  }
+
+  &__image {
+    background-color: hsl(277, 64%, 61%);
+  }
+}
