@@ -4,7 +4,7 @@
 
 body {
   background-color: hsl(233, 47%, 7%);
-  color: rgb(255, 255, 255);
+  color: hsl(0,0%,100%);
   font-family: "Inter", sans-serif;
   font-weight: 400;
 }
@@ -69,7 +69,6 @@ body {
     margin-top: 2.5625rem;
 
     &__item {
-      display: list-item;
       font-size: 1.5rem;
       font-weight: bold;
       line-height: 1.8125rem;

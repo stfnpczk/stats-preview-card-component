@@ -453,7 +453,6 @@ body {
 }
 
 .card .stats__item {
-  display: list-item;
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.8125rem;
