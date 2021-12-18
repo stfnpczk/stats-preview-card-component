@@ -494,6 +494,19 @@ body {
   margin-top: 2.5625rem;
 }
 
+@media screen and (min-width: 1440px) {
+  .card .stats {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 21.96875rem;
+  }
+}
+
 .card .stats__item {
   font-size: 1.5rem;
   font-weight: bold;
