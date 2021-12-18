@@ -453,7 +453,7 @@ body {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 25.1875rem;
             flex: 1 1 25.1875rem;
-    padding: 71px 95px 59px 72px;
+    padding: 4.4375rem 5.9375rem 3.6875rem 4.5rem;
   }
 }
 
@@ -468,6 +468,7 @@ body {
   .card__heading {
     font-size: 2.25rem;
     line-height: 2.75rem;
+    margin-bottom: 1.5625rem;
   }
 }
 
@@ -504,6 +505,7 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
     max-width: 21.96875rem;
+    margin-top: 4.5rem;
   }
 }
 
@@ -520,7 +522,7 @@ body {
   font-size: 0.75rem;
   line-height: 1.5625rem;
   text-align: center;
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.6);
 }
