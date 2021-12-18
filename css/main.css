@@ -401,14 +401,40 @@ body {
   overflow: hidden;
 }
 
-.card img {
-  width: 100%;
-  mix-blend-mode: multiply;
-  opacity: 0.79;
+@media only screen and (min-width: 1440px) {
+  .card {
+    max-width: 69.375rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: left;
+  }
 }
 
 .card__image {
   background-color: #aa5cdb;
+}
+
+.card__image img {
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+  opacity: 0.79;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (min-width: 1440px) {
+  .card__image {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 33.75rem;
+            flex: 1 1 33.75rem;
+    /*maybe better to use % (44.86%) */
+  }
 }
 
 .card__text-container {
@@ -422,11 +448,27 @@ body {
   padding: 2.4375rem 1.96875rem 2rem;
 }
 
+@media screen and (min-width: 1440px) {
+  .card__text-container {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 25.1875rem;
+            flex: 1 1 25.1875rem;
+    padding: 71px 95px 59px 72px;
+  }
+}
+
 .card__heading {
   font-size: 1.75rem;
   line-height: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .card__heading {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
 }
 
 .card__accent {
@@ -437,7 +479,7 @@ body {
   font-size: 0.9375rem;
   color: rgba(255, 255, 255, 0.75);
   line-height: 1.5625rem;
-  text-align: center;
+  max-width: 23.375rem;
 }
 
 .card .stats {
@@ -461,7 +503,6 @@ body {
 .card .stats__caption {
   display: list-item;
   font-family: "Lexend Deca", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 1.5625rem;
