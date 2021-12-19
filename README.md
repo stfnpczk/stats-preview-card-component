@@ -1,11 +1,13 @@
 # Frontend Mentor - Stats preview card component solution
 
-This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
+![Design preview for Stats preview card component](./images/desktop-preview.jpg)
+
 ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -15,7 +17,6 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 - [Author](#author)
 <!-- - [Acknowledgments](#acknowledgments) -->
 
-
 ## Overview
 
 ### The challenge
@@ -24,18 +25,12 @@ Users should be able to:
 
 - View the optimal layout depending on their device's screen size
 
-### Screenshot
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
-![](./screenshot.jpg)
-
-<!-- You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it. -->
-
 
 ### Links
 
+
 - [Frontend Mentor - solution URL](https://your-solution-url.com)
-- [Live Demo](https://your-live-site-url.com)
+- [Live Demo](https://stfnpczk.github.io/stats-preview-card-component/)
 
 ## My process
 
@@ -50,40 +45,52 @@ Users should be able to:
 
 ### What I learned
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-<!-- Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge. -->
+- `<picture>` : handy html tag to switch out images based on the viewport width.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<picture>
+  <source
+    srcset="./images/image-header-desktop.jpg"
+    media="(min-width: 1440px)"
+  />
+  <img
+    src="./images/image-header-mobile.jpg"
+    alt=""
+  />
+</picture>
 ```
+
+- `mix-blend` : this css property can be used together with opacity like an image filter to blend with the parent element.
 
 ```scss
-.proud-of-this-css {
-  color: papayawhip;
+.parentElement {
+  background-color: hsl(277, 64%, 61%);
+
+  img {
+    mix-blend-mode: multiply;
+    opacity: 0.79;
+  }
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-```
-
 
 ### Continued development
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-<!-- Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect. -->
 
+- At a later point, I will further look into how to build responsive websites with less media queries. This article from [css-tricks](https://css-tricks.com/responsive-layouts-fewer-media-queries/) by Temani Afif looks very promising to help with that.
 
 ### Useful resources
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+
+
+
+- [W3 schools reference -> picture tag ](https://www.w3schools.com/tags/tag_picture.asp) 
+- [MDN docs -> mix-blend-mode](https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode) 
+- [Css-tricks article -> fewer media queries](https://css-tricks.com/responsive-layou%20ts-fewer-media-queries/)
+
 ## Author
 
 - Frontend Mentor - [@stfnpczk](https://www.frontendmentor.io/profile/stfnpczk)
 
 <!-- - Website - [Add your name here](https://www.your-site.com) -->
 <!-- - Twitter - [@yourusername](https://www.twitter.com/yourusername) -->
-
 
 <!-- ## Acknowledgments
 **ADD TEXT**
