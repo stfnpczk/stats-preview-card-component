@@ -28,15 +28,28 @@ body {
   border-radius: 0.5rem;
   overflow: hidden;
 
-  @media only screen and (min-width: 1440px) {
+  @media only screen and (min-width: 768px) {
+    max-width: 437px;
+    text-align: center;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
+
+
+  @media only screen and (min-width: 1024px) {
     max-width: 69.375rem;
     flex-direction: row;
     text-align: left;
+    flex: 1 1 33.75rem; 
   }
 
   &__image {
     background-color: hsl(277, 64%, 61%);
-    
+     
     img {
       width: 100%;
       height: 100%;
@@ -44,9 +57,9 @@ body {
       opacity: 0.79;
       object-fit: cover;
     }
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 1024px) {
       order: 2;
-      flex: 1 1 33.75rem; /*maybe better to use % (44.86%) */
+      flex: 1 1 33.75rem; 
     }
 
   }
@@ -56,7 +69,7 @@ body {
     flex-direction: column;
     padding: 2.4375rem 1.96875rem 2rem;
 
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 1024px) {
       flex: 1 1 25.1875rem;
       padding: 4.4375rem 5.9375rem 3.6875rem 4.5rem ;
     }
@@ -68,7 +81,7 @@ body {
     font-weight: bold;
     margin-bottom: 1rem;
   
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 1024px) {
       font-size: 2.25rem;
       line-height: 2.75rem;
       margin-bottom: 1.5625rem;
@@ -94,7 +107,7 @@ body {
     gap: 1.4375rem;
     margin-top: 2.5625rem;
     
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 1024px) {
       flex-direction: row;
       justify-content: space-between ;
       max-width: 21.96875rem;
