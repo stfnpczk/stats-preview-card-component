@@ -60,7 +60,7 @@ Users should be able to:
 </picture>
 ```
 
-- `mix-blend` : this css property can be used together with opacity like an image filter to blend with the parent element.
+- `mix-blend-mode` : this css property can be used together with opacity like an image filter to blend with the parent element.
 
 ```scss
 .parentElement {
