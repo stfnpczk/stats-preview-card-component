@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 
-- [Frontend Mentor - solution URL](https://your-solution-url.com)
+- [Frontend Mentor - solution URL](https://www.frontendmentor.io/solutions/stats-card-component-using-flexbox-and-scss-D4KyAx5Nb)
 - [Live Demo](https://stfnpczk.github.io/stats-preview-card-component/)
 
 ## My process
