@@ -1,9 +1,16 @@
 /*----------------------------
       Base
  ----------------------------*/
+// colors
+$dark-blue: hsl(233, 47%, 7%);
+$violet: hsl(277, 64%, 61%);
+
+// breakpoint
+$desktop: 1024px;
+
 
 body {
-  background-color: hsl(233, 47%, 7%);
+  background-color: $dark-blue;
   color: hsl(0, 0%, 100%);
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -33,7 +40,7 @@ body {
     text-align: center;
   }
 
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: $desktop) {
     max-width: 69.375rem;
     flex-direction: row;
     text-align: left;
@@ -43,7 +50,7 @@ body {
   }
 
   &__image {
-    background-color: hsl(277, 64%, 61%);
+    background-color: $violet;
 
     img {
       width: 100%;
@@ -53,7 +60,7 @@ body {
       object-fit: cover;
     }
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $desktop) {
       order: 2;
       flex: 1 1 33.75rem;
     }
@@ -64,7 +71,7 @@ body {
     flex-direction: column;
     padding: 2.4375rem 1.96875rem 2rem;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $desktop) {
       flex: 1 1 25.1875rem;
       padding: 4.4375rem 5.9375rem 3.6875rem 4.5rem;
     }
@@ -76,7 +83,7 @@ body {
     font-weight: bold;
     margin-bottom: 1rem;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $desktop) {
       font-size: 2.25rem;
       line-height: 2.75rem;
       margin-bottom: 1.5625rem;
@@ -84,7 +91,7 @@ body {
   }
 
   &__accent {
-    color: hsl(277, 64%, 61%);
+    color: $violet;
   }
 
   &__paragraph {
@@ -100,7 +107,7 @@ body {
     gap: 1.4375rem;
     margin-top: 2.5625rem;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $desktop) {
       flex-direction: row;
       justify-content: space-between;
       max-width: 21.96875rem;
